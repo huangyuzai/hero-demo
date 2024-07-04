@@ -1,0 +1,74 @@
+.hero {
+    background: #2b2d38;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.icoImg {
+    width: 40px;
+    height: 40px;
+}
+.desc {
+    color: #95969b;
+}
+.btn {
+    /* width: 240px; */
+    height: 60px;
+    line-height: 60px;
+    border-radius: 16px;
+    border-bottom-left-radius: 0;
+    background: #db2a6b;
+}
+.bigImg {
+    object-fit: contain;
+}
+.right,
+.left,
+.serviceItem {
+    flex: 1;
+}
+.ico {
+    width: 64px;
+    height: 64px;
+    background: #464751;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+@media (min-width: 1200px) {
+    .container::after,
+    .container::before {
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        border: solid 1px #e1e1e1;
+        z-index: -1;
+        opacity: .25;
+    }
+    .container::after {
+        width: 53.125vw;
+        height: 53.125vw;
+        top: 26.25vw;
+        left: 66.0625vw;
+    }
+    .container::before {
+        width: 68.875vw;
+        height: 68.875vw;
+        top: 8.9375vw;
+        left: 50.6875vw;
+    }
+}
+@media (min-width: 1600px) {
+    .container::after {
+        width: 850px;
+        height: 850px;
+        top: 420px;
+        left: 1057px;
+    }
+    .container::before {
+        width: 1102px;
+        height: 1102px;
+        top: 143px;
+        left: 811px;
+    }
+}
